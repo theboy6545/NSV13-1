@@ -24,7 +24,7 @@
 
 	if(istype(D, /atom))
 		sprite = getFlatIcon(D)
-		hash = md5(sprite)
+		hash = md5(icon2base64(sprite))
 		src << browse_rsc(sprite, "vv[hash].png")
 
 	title = "[D] ([REF(D)]) = [type]"
